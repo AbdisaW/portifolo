@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolo Design</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-info">
+            <h1>Abdisa Wake</h1>
+            <span>Full Stack Developer & Designer</span>
+        </div>
+        <div class="nav-actions">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#linkedln">Linkedln</a></li>
+                    <li><a href="#gitHub">GitHub</a></li>
+                </ul>
+            </nav>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </div>
+    </header>
+    <div class="container">
+        <main class="column-container">
+            <aside>
+                <div class="side-panel-profile">
+                    <div class="side-panel-logo">
+                        <h1>AW</h1>
+                        <h2>Abdisa Wake</h2>
+                        <span>Full Stack Developer </span>
+                    </div>
+                </div>
+
+                <div class="side-panel-quick-info">
+                    <h3>Quick Info</h3>
+                    <ul>
+                        <li>
+                            <span class="text">📍 Addis Ababa, Ethiopia</span>
+                        </li>
+                        <li>
+                            <span class="text">💼 2+ Years Experience</span>
+                        </li>
+                        <li>
+                            <span class="text">🎓 BSc Computer Science and Engineering </span>
+                        </li>
+                        <li>
+                            <span class="text">🌐 Available for Hire</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="side-panel-nav-bar">
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects"> Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                    </ul>
+                </nav>
+
+            </aside>
+            <section>
+                <h3 id="about-me">About Me</h3>
+                <hr />
+                <div class="section-card">
+                    <p>Passionate Full Stack Developer with 8+ years of experience in designing and developing scalable
+                        web
+                        applications. Specialized in React, Node.js, and cloud technologies. I thrive on solving complex
+                        problems and creating intuitive user experiences that make a difference.</p>
+                    <p>My approach combines technical expertise with creative problem-solving, always focusing on
+                        delivering
+                        high-quality solutions that exceed expectations. I'm constantly learning and adapting to new
+                        technologies to stay at the forefront of web development.</p>
+                </div>
+
+                <h3>Introduction Video</h3>
+                <div class="section-card">
+                    <div class="section-vedio">
+
+                        <!-- Upload area (initially visible) -->
+                        <div class="upload-area">
+                            <span>Upload a short introduction video</span>
+                            <span>MP4, WebM, or OGG format</span>
+                            <input type="file" id="videoUpload" accept="video/mp4, video/webm, video/ogg">
+                            <label for="videoUpload" class="upload-btn">Choose Video File</label>
+                        </div>
+
+                        <!-- Video preview (hidden at first) -->
+                        <video id="videoPreview" controls class="hidden"></video>
+
+                        <!-- File info & remove button (hidden at first) -->
+                        <div id="videoInfo" class="video-info hidden">
+                            <span id="videoFileName">File:</span>
+                            <button id="removeVideoBtn" class="remove-btn">Remove</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <h3 id="experience">Work Experience</h3>
+                <hr />
+                <div class="section-card">
+                    <div class="section-experience">
+                        <div class="section-details">
+                            <h4>Senior Full Stack Developer</h4>
+                            <h5>Tech Innovations Inc.</h5>
+                        </div>
+                        <span class="date">2021 - Present</span>
+                    </div>
+                    <ul>
+                        <li>Led development of enterprise-scale web applications serving 100K+ users</li>
+                        <li>Led development of enterprise-scale web applications serving 100K+ users</li>
+                        <li>Mentored team of 5 junior developers, improving code quality and delivery speed</li>
+                        <li>Architected and deployed CI/CD pipelines using Docker and Kubernetes</li>
+                    </ul>
+                    <div class="section-framwork">
+                        <ul>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 id="education">Education</h3>
+                <hr />
+                <div class="section-card">
+                    <div class="section-education">
+                        <div class="education-details">
+                            <h4>BSc Computer Science and Engineering</h4>
+                            <h5>University of California, Berkeley</h5>
+                        </div>
+                        <span class="date">2021 - Present</span>
+                    </div>
+                    <h6>Focus: Software Engineering and Distributed Systems</h6>
+                    <h6>GPA: 3.7/4.0</h6>
+                </div>
+                <h3 id="projects">Featured Projects</h3>
+                <hr />
+                <div class="section-project-card">
+                    <div class="section-project-name">
+                        <h5>E-Commerce Platform</h5>
+                        <p>A full-featured e-commerce platform with real-time inventory management, payment processing,
+                            and
+                            order tracking. Handles 50K+ daily transactions.</p>
+                        <ul>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Stripe</li>
+                            <li>Redis</li>
+                        </ul>
+                        <a href="veiw ">View Project →</a>
+                    </div>
+                    <div class="section-project-name">
+                        <h5>Task Management Dashboard</h5>
+                        <p>Collaborative task management tool with real-time updates, team chat, and advanced analytics.
+                            Used by 200+ companies worldwide.</p>
+
+                        <ul>
+                            <li>Next.js</li>
+                            <li>TypeScript</li>
+                            <li>Socket.io</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <a href="veiw ">View Project →</a>
+                    </div>
+                    <div class="section-project-name">
+                        <h5>Social Media Analytics</h5>
+                        <p>Analytics dashboard for social media managers to track engagement, sentiment analysis, and
+                            campaign performance across multiple platforms.</p>
+                        <ul>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>TensorFlow</li>
+                            <li>AWS</li>
+                        </ul>
+                        <a href="veiw ">View Project →</a>
+                    </div>
+                    <div class="section-project-name">
+                        <h5>Healthcare Management System</h5>
+                        <p>HIPAA-compliant healthcare management system for patient records, appointments, and billing.
+                            Deployed across 15+ medical facilities.</p>
+                        <ul>
+                            <li>Next.js</li>
+                            <li>PostgreSQL</li>
+                            <li>AWS</li>
+                            <li>HIPAA</li>
+                        </ul>
+                        <a href="veiw ">View Project →</a>
+                    </div>
+                </div>
+                <h3 id="certifications">Certifications & Awards</h3>
+                <hr />
+                <div class="section-project-card">
+                    <div class="section-project-name">
+                        <div class="cert-header">
+                            <h5>AWS Certified Solutions Architect</h5>
+                            <a href="#mymodal"><ion-icon name="pencil-outline"></ion-icon></a>
+                        </div>
+                        <p>Amazon Web Services - 2023</p>
+                        <details class="cert-details">
+                            <summary class="toggle-cert">
+                                <span>
+                                    <ion-icon name="chevron-forward-outline" class="leading-icon"></ion-icon>
+                                    View Certification
+                                </span>
+                                <ion-icon name="open-outline" class="trailing-icon"></ion-icon>
+                            </summary>
+                            <iframe src="https://aws.amazon.com/certification/" title="AWS Certificate"
+                                class="cert-iframe">
+                            </iframe>
+                        </details>
+                    </div>
+                    <div class="section-project-name">
+                        <div class="cert-header">
+                            <h5>Google Cloud Professional Developer</h5>
+                            <a href="#mymodal"><ion-icon name="pencil-outline"></ion-icon></a>
+                        </div>
+                        <p>Google Cloud - 2022</p>
+
+                        <details class="cert-details">
+                            <summary class="toggle-cert">
+                                <span>
+                                    <ion-icon name="chevron-forward-outline" class="leading-icon"></ion-icon>
+                                    View Certification
+                                </span>
+                                <ion-icon name="open-outline" class="trailing-icon"></ion-icon>
+                            </summary>
+                            <iframe src="https://cloud.google.com/certification" title="Google Cloud Certificate"
+                                class="cert-iframe">
+                            </iframe>
+                        </details>
+
+                    </div>
+                    <div class="section-project-name">
+                        <div class="cert-header">
+                            <h5>Certified Kubernetes Administrator</h5>
+                            <a href="#mymodal" class="edit-trigger"><ion-icon name="pencil-outline"></ion-icon></a>
+                        </div>
+                        <p>CNCF - 2023</p>
+
+                        <details class="cert-details">
+                            <summary class="toggle-cert">
+                                <span>
+                                    <ion-icon name="chevron-forward-outline" class="leading-icon"></ion-icon>
+                                    View Certification
+                                </span>
+                                <ion-icon name="open-outline" class="trailing-icon"></ion-icon>
+                            </summary>
+                            <iframe
+                                src="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+                                title="CKA Certificate" class="cert-iframe"></iframe>
+                        </details>
+                    </div>
+                    <div class="section-project-name">
+                        <div class="cert-header">
+                            <h5>Employee of the Year</h5>
+                            <a href="#mymodal"><ion-icon name="pencil-outline"></ion-icon></a>
+                        </div>
+                        <p>Tech Innovations Inc. - 2022</p>
+                        <details class="cert-details">
+                            <summary class="toggle-cert">
+                                <span>
+                                    <ion-icon name="chevron-forward-outline" class="leading-icon"></ion-icon>
+                                    View Certification
+                                </span>
+                                <ion-icon name="open-outline" class="trailing-icon"></ion-icon>
+                            </summary>
+                            <iframe src="https://example.com" title="Award Certificate" class="cert-iframe">
+                            </iframe>
+                        </details>
+                    </div>
+                </div>
+
+
+                <div id="mymodal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Edit Certification</h3>
+                            <a href="#" class="close">&times;</a>
+
+                        </div>
+                        <div class="modal-body">
+
+                            <label for="certTitle">Certification Title</label>
+                            <input type="text" id="certTitle" placeholder="Enter certification title" />
+
+                            <label for="certOrg">Issuing Organization</label>
+                            <input type="text" id="certOrg" placeholder="Enter issuing organization" />
+
+                            <label for="certYear">Year</label>
+                            <input type="text" id="certYear" placeholder="Enter year" />
+
+                            <label for="certUrl">Certification URL (Optional)</label>
+                            <input type="text" id="certUrl" placeholder="https://example.com/certification" />
+                            <p>External link to view the certification</p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="#" class="btn cancel">Cancel</a>
+                            <a href="#" class="btn save">Save Changes</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-info">
+                <h2>Abdisa Wake</h2>
+                <span>Full Stack Developer specializing </span>
+            </div>
+            <hr />
+            <div class="footer-info-copy-write">
+                &copy; 2025 Abdisa wake. All rights reserved.
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
