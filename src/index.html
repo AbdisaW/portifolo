@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="index.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+
+    <script type="module" src="datePicker.js"></script>
 </head>
 
 <body>
@@ -17,6 +23,7 @@
             <h1>Abdisa Wake</h1>
             <span>Full Stack Developer & Designer</span>
         </div>
+
         <div class="nav-actions">
             <nav class="nav-bar">
                 <ul>
@@ -58,13 +65,15 @@
                 </div>
 
                 <nav class="side-panel-nav-bar">
-                    <ul>
+                    <ul id="sideNav">
                         <li><a href="#about-me">About Me</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#projects"> Projects</a></li>
                         <li><a href="#certifications">Certifications</a></li>
+
                     </ul>
+
                 </nav>
 
             </aside>
@@ -300,7 +309,8 @@
                             <input type="text" id="certOrg" placeholder="Enter issuing organization" />
 
                             <label for="certYear">Year</label>
-                            <input type="text" id="certYear" placeholder="Enter year" />
+                            <date-picker id="certYear"></date-picker>
+                            <!-- <input type="text" id="certYear" placeholder="Enter year" /> -->
 
                             <label for="certUrl">Certification URL (Optional)</label>
                             <input type="text" id="certUrl" placeholder="https://example.com/certification" />
@@ -314,6 +324,28 @@
                     </div>
 
                 </div>
+
+                <h3 id="github">GitHub Profile</h3>
+                <hr />
+                <div class="section-card">
+                    <div id="githubProfile" class="github-profile">
+                        <button id="fetchGithubBtn" class="fetch-btn">Fetch My GitHub Info</button>
+                        <div id="githubInfo" class="hidden">
+                            <img id="avatar" class="avatar" alt="GitHub Avatar" />
+                            <h4 id="name"></h4>
+                            <p id="bio"></p>
+                            <p><strong>Followers:</strong> <span id="followers"></span></p>
+                            <p><strong>Public Repos:</strong> <span id="repos"></span></p>
+                            <a id="profileLink" href="#" target="_blank">View GitHub Profile →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button id="addSectionBtn" class="add-section-btn">➕ Add New Section</button>
+
+
+
             </section>
         </main>
         <footer>
